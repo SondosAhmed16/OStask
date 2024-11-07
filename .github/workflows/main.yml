@@ -9,9 +9,10 @@ on:
       runs-on: ubuntu-latest
 
       steps:
-        - name: 'testing git hub'
-           run : pwd
+       - uses : actions/checkout@vt
 
-         - name: 'testing '
-           run : echo sondos
+       - name : "login "
+
+       run: docker login --username ${{secrets.DOCKER}} --password ${{secrets.DOCKER_TOKEN}}
+
 

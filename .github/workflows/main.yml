@@ -12,3 +12,8 @@ jobs:
 
       - name: "Login to Docker"
         run: docker login --username ${{ secrets.DOCKER }} --password ${{ secrets.DOCKER_TOKEN }}
+
+
+
+
+

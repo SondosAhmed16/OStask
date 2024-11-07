@@ -3,16 +3,15 @@ on:
         branches:
         - master
 
-  
-  jobs :
-    build:
+jobs :
+  build:
       runs-on: ubuntu-latest
 
       steps:
-       - uses : actions/checkout@vt
+        - uses : actions/checkout@vt
 
-       - name : "login "
+        - name : "login "
 
-       run: docker login --username ${{secrets.DOCKER}} --password ${{secrets.DOCKER_TOKEN}}
+        run: docker login --username ${{secrets.DOCKER}} --password ${{secrets.DOCKER_TOKEN}}
 
 
